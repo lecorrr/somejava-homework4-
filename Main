@@ -1,0 +1,18 @@
+package trianglehomework;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("input 3 sides of triandle");
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		double c = sc.nextDouble();
+		if (a + b > c && c + b > a) {
+			System.out.println("triangle can exist");
+		} else {
+			System.out.println("triangle can not exist");
+		}
+	}
+}
